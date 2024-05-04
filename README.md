@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -11,3 +12,6 @@ Currently, two official plugins are available:
 # SmartSyn-Website
  Elevating team productivity through seamless code collaboration and innovation.
 >>>>>>> origin/main
+=======
+# Websites
+>>>>>>> 6234aede67802d617ba8df6ef76448fe11b4363d
