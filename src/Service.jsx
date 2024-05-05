@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './App.css'; 
 
 const ServicePage = () => {
@@ -8,7 +7,7 @@ const ServicePage = () => {
   };
 
   return (
-    <div className='main-service' >
+    <div className='main-service'>
       <div>
         <h2 className='service-heading'>Our Service</h2>
         <p className='service-para'>We offer a variety of services to satisfy every craving. At SpiecyCraft, we serve up more than just great food we deliver exceptional experiences through our diverse range of services.</p>
@@ -25,7 +24,7 @@ const ServicePage = () => {
           <button className="explore-button" onClick={handleExploreClick}>Explore More</button>
         </div>
         <div className="service-card">
-          <img src="src/assets/new3.jpeg" alt="Service 3" />
+          <img src="src/assets/new3.jpg" alt="Service 3" />
           <p>Crafting enchanting and magical birthday celebrations in our dedicated hall, where every detail is meticulously tailored to make your special day truly unforgettable.</p>
           <button className="explore-button" onClick={handleExploreClick}>Explore More</button>
         </div>
@@ -35,6 +34,7 @@ const ServicePage = () => {
 };
 
 export default ServicePage;
+
 
 
 

@@ -1,8 +1,8 @@
-import pizza from './assets/pizza.png';
-import chicken from './assets/chicken.png';
-import desert from './assets/desert.png';
-import veg from './assets/veg.png';
-import salad from './assets/salad.png';
+import food from './assets/food.jpg'
+import cc from './assets/cc.jpg';
+import cup from './assets/cup.webp';
+import vegetable from './assets/vegetable.jpg';
+import last from './assets/last.jpg';
 
 
 
@@ -19,7 +19,7 @@ const Menu = () => {
       <div className="container">
       <div className="box">
       <div className="img-box">
-      <img src={pizza}  />
+      <img src={food}  />
       </div>
       <div className='menu-detail'>
       <p className='text'>Junk food</p>
@@ -29,7 +29,7 @@ const Menu = () => {
       </div>
       <div className="box">
       <div className="img-box">
-      <img src={chicken} />
+      <img src={cc} />
       </div>
       <div className='menu-detail'>
       <p>Chicken</p>
@@ -40,10 +40,10 @@ const Menu = () => {
     
       <div className="box">
       <div className="img-box">
-      <img src={desert} />
+      <img src={cup} />
       </div>
       <div className='menu-detail'>
-      <p>Desert</p>
+      <p>Dessert</p>
 
       </div>
 
@@ -51,7 +51,7 @@ const Menu = () => {
 
       <div className="box">
       <div className="img-box">
-      <img src={veg} />
+      <img src={vegetable} />
       </div>
       <div className='menu-detail'>
       <p>Vegetrain</p>
@@ -63,7 +63,7 @@ const Menu = () => {
 
       <div className="box">
       <div className="img-box">
-      <img src={salad} />
+      <img src={last} />
       </div>
       <div className='menu-detail'>
       <p>Salid</p>

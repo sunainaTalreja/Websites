@@ -31,7 +31,7 @@ const History = () => {
      </div>
      <div className="history-icon">
      <FaGift className="iconnn" />
-     <p className="icon-text"> Delivered <br/>
+     <p className="icon-textt" > Delivered <br/>
       </p>
    
      </div>

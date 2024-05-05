@@ -7,8 +7,6 @@
   align-items: center;
   position: relative;
 
-
-
 }
 
  .logo{
@@ -135,7 +133,9 @@
   .img {
     margin-left: 0.5rem; 
   }
-}
+}/* Header end */
+
+/* Home Start */
 .Home{
   max-width: 100%;
   display: flex;
@@ -204,23 +204,56 @@
   text-align: center;
   overflow: hidden;
   
-  
 }
 
 @media screen and (min-width: 768px) {
   .Content {
     max-width: 70%; 
   }
-}
+}/* Home end */
+
+/* QR Start */
 .QR {
   display: flex;
   height: 100vh;
   background-image: url('./assets/picccc.webp');
   background-size: cover;
-  opacity: 0.8rem;
-
-
+  opacity: 0.9;
 }
+
+.QR-main {
+  width: 90%; 
+  max-width: 30rem; 
+  height: auto; 
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+  margin: 2rem auto; 
+  border-radius: 2rem;
+  padding: 2rem; 
+}
+
+.QR-h1 {
+  color: white;
+  font-size: 6vw;
+  text-align: center;
+  font-family: 'Brush Script MT';
+}
+
+.QR-p {
+  text-align: center;
+  color: white;
+  font-size: 1.8vw; 
+}
+
+.QR-Code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 2rem;
+}/* QR End */
+
+/* Menu Start */
 .menu-text{
   font-size: 8rem;
   font-family: 'Brush Script MT', cursive;
@@ -268,7 +301,7 @@
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  background:whitesmoke;
+  background:white;
   overflow: hidden;
   cursor: pointer;
  
@@ -305,6 +338,23 @@
     width:100%;
     height: 100%;
   }
+  
+  @media screen and (max-width: 768px) {
+    .menu-list {
+      flex-direction: column; 
+      gap: 2rem; 
+    }
+  
+    .box {
+      margin: 1rem 0; 
+    }
+  
+    .img-box {
+      height: 80px; 
+      width: 80px; 
+    }
+  }
+  /* Menu End */
 
 
 
@@ -341,7 +391,7 @@
 }
 
 
-@keyframes fadeIn {
+ @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -373,48 +423,69 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center; /* Center the image */
+  object-position: center center; 
 }
-
-
-.footer{
+/* footer Start */
+.footer {
   background-color: black;
-  
+  padding: 20px; 
+  text-align: center; 
 }
-.footer-heading{
+
+.footer-heading {
   color: white;
- font-size: 2rem;
- font-family: 'Brush Script MT', cursive;
- text-align: center;
+  font-size: 2rem;
+  font-family: 'Brush Script MT', cursive;
 }
-.footer-para{
+
+.footer-para {
   color: white;
-  text-align: center;
+  font-size: 1.5rem;
 }
-.footer-icon{
+
+.footer-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  font-size: 2rem;
-
+  font-size: 2rem; 
+  margin-top: 20px;
 }
-.icon{
+
+.icon {
   color: white;
   cursor: pointer;
-  
 }
+
 .icon:hover {
-  filter: drop-shadow(0 0 5px white) brightness(150%); 
+  filter: drop-shadow(0 0 5px white) brightness(150%);
 }
+
+
+@media (max-width: 768px) {
+  .footer-heading {
+    font-size: 1.5rem; 
+  }
+
+  .footer-para {
+    font-size: 1rem; 
+  }
+
+  .footer-icon {
+    font-size: 1.5rem; 
+  }
+}/* Footer End */
+
+/* contact-page start */
+
 .heading-contact{
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-top: 5rem;
   margin-bottom: 2rem;
-
 }
+
 .contact-form{
   max-width: 50rem;
   margin: auto;
@@ -425,6 +496,10 @@
 gap: 2rem;
 
 }
+.inputs{
+  border:1px solid black;
+}
+
 .btn-contact{
   background-color: black;
   color: white;
@@ -460,16 +535,15 @@ gap: 2rem;
     margin-left: auto;
     margin-right: auto;
   }
- 
+}/* contact-page End */
 
-
-}
+/* service-page start */
 .service-heading{
   font-size: 5rem;
   text-align: center;
   font-family: 'Brush Script MT', cursive;
   font-weight: bold;
-  margin-top: 2rem;
+
 }
 .service-para{
   font-size: 2rem;
@@ -520,75 +594,216 @@ gap: 2rem;
   transform: scale(0.95);
 }
 
-.History{
-  background-image: url('./assets/img7.jpg');
-  height: 100vh;
-  background-size: cover;
 
+@media screen and (max-width: 768px) {
+  .service-page {
+    padding: 1rem; 
+  }
 
+  .service-card {
+    width: calc(50% - 2rem); 
+  }
 
-
-
+  .service-heading,
+  .service-para {
+    width: 100%; 
+    text-align: center; 
+  }
 }
-.History-header{
-  width: 50%;
-  height: 5rem;
-  margin-left: 20rem;
-  background-color: whitesmoke;
-  border-radius: 2px solid gray;
-  border-radius: 5px;
- 
-}
-.History-text{
-  display: flex;
 
- 
-}
-.history-p1{
-  margin-left: 8rem;
-  font-family: 'Brush Script MT', cursive;
-  font-weight: bolder;
-  font-size: 25px;
+
+.main-service {
   
+  
+  background-color:Gray; 
+  animation-name: backgroundAnimation; 
+  animation-duration: 3s; 
+  animation-timing-function: ease; 
+  animation-iteration-count: infinite; 
 }
-.history-p{
-  margin-left: 2rem;
-  font-family: 'Brush Script MT', cursive;
-  font-weight: bolder;
-  font-size: 25px;
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color:Gray; 
+  }
+  50% {
+    background-color:rgb(180, 164, 164); 
+  }
+  100% {
+    background-color:rgb(232, 220, 220); 
+  }
+}
+.menu-list-text{
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Brush Script MT', cursive; 
+  animation: colorChange 3s infinite alternate;
+
+}
+@keyframes colorChange {
+  0% {
+    color: gray
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color:rgb(171, 166, 166);
+  }
+}
 
 
+@media screen and (max-width: 480px) {
+  .service-card {
+    width: calc(100% - 2rem); 
+  }
 }
-.iconn{
-  width:5rem;
-  height: 5rem;
-  color:white;
- 
-  margin-top: 2rem;
-}
-.icon-text{
-  color:white;
-  margin-left: 40px;
-  margin-top: 2rem;
-  font-size: 2rem;
-  font-family: 'Brush Script MT', cursive;
- 
+/* service-page end */
+
+/* History start */
+
+  .History {
+    background-image: url('./assets/img7.jpg');
+    height: 100vh;
+    background-size: cover;
+  }
   
-}
-.history-icon{
-  display: flex;
-  justify-content: center;
-  
-}
-.iconnn{
-  
-    width:5rem;
+  .History-header {
+    width: 90%; 
+    max-width: 50rem; 
     height: 5rem;
-    color:white;
-    margin-top: 1rem;
-    margin-left: -12rem;
+    margin: 0 auto; 
+    background-color: whitesmoke;
+    border: 1px solid gray; 
+    border-radius: 5px;
+  }
+  
+  .History-text {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .history-p1, .history-p {
+    font-family: 'Brush Script MT', cursive;
+    font-weight: bold;
+    font-size: 30px; 
+  }
+  
+  .history-p1 {
+    margin-left: 2rem; 
+  }
+  
+  .history-p {
+    margin-left: 1rem; 
+  }
+  
+  .iconn {
+    width: 5rem;
+    height: 5rem;
+    color: white;
+    margin-top: 1rem; 
+  }
+  .iconnn{
+    width: 5rem;
+    height: 5rem;
+    color: white;
+    margin-top: 1rem; 
+    margin-left: -10rem;
 
+  }
+  
+  .icon-text {
+    color: white;
+    margin-left: 1rem; 
+    margin-top: 1rem; 
+    font-size: 2rem; 
+    font-family: 'Brush Script MT', cursive;
+  }
+  .icon-textt{
+    color: white;
+    margin-left: 2rem; 
+    margin-top: 2rem; 
+    font-size: 2rem; 
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+
+  }
+  
+  .history-icon {
+    display: flex;
+    justify-content: center;
+  }
+  
+/* History end */
+
+/* Menulist start */
+
+.menulist {
+  padding: 2rem;
+  width: 100%; 
 }
+
+.menulist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menulist-box {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  width: 250px;
+  min-height: 300px; 
+  border: 1px solid gray;
+  transition: 0.5s;
+  margin-bottom: 1rem; 
+}
+
+.menu-img {
+  width: 100%; 
+  height: auto; 
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.menu-img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menulist-box h3,
+.menulist-box p {
+  margin: 0.5rem; 
+  font-family: 'Brush Script MT', cursive; 
+  font-weight: bold;
+  font-size: 1.5rem; 
+}
+
+.menu-icon {
+  font-size: 2rem;
+  margin-top: auto; 
+  cursor: pointer;
+}
+
+.menu-icon:hover {
+  color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  .menulist-box {
+    width: calc(50% - 1rem); 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menulist-box {
+    width: calc(100% - 1rem); 
+  }
+}
+/* Menulist end */
+
+
 
 
 
